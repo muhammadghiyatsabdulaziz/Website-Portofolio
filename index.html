@@ -19,9 +19,9 @@
       --hitam: #111827;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--krem); color: var(--hitam); overflow-x: hidden; }
+    * { margin: 0; padding: 0; box-sizing: border-box; word-break: break-word; overflow-wrap: break-word; }
+    html { scroll-behavior: smooth; max-width: 100%; overflow-x: hidden; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--krem); color: var(--hitam); overflow-x: hidden; max-width: 100%; }
 
     /* NAVBAR */
     nav {
@@ -153,6 +153,11 @@
       .hero-btns { flex-direction: column; gap: 12px; }
       .btn-hijau, .btn-outline { text-align: center; padding: 13px 24px; }
       footer { padding: 20px; font-size: 0.8rem; }
+      .kontak-item-text .value { word-break: break-all; font-size: 0.85rem; }
+      .kontak-grid { overflow: hidden; }
+      .kontak-item { flex-wrap: wrap; }
+      nav { max-width: 100vw; overflow: hidden; }
+      .nav-logo span { font-size: 1rem; }
     }
   </style>
 </head>
