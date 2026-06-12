@@ -136,24 +136,27 @@
     footer span { color: var(--hijau-terang); }
 
     /* RESPONSIVE */
-@media (max-width: 768px) {
-  nav { padding: 16px 20px; }
-  .nav-links { display: none; }
-  section { padding: 60px 20px; }
-  #hero { padding: 90px 20px 50px; }
-  #hero .hero-title { font-size: 2.2rem; }
-  #hero .hero-desc { font-size: 1rem; }
-  .about-grid, .kontak-grid { grid-template-columns: 1fr; gap: 40px; }
-  .proyek-grid { grid-template-columns: 1fr; }
-  .about-badge { bottom: -10px; right: 10px; }
-  .about-info { grid-template-columns: 1fr; }
-  .kontak-form-wrap { padding: 24px 20px; }
-  .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  .proyek-card { margin: 0; }
-  .hero-btns { flex-direction: column; gap: 12px; }
-  .btn-hijau, .btn-outline { text-align: center; padding: 13px 24px; }
-  footer { padding: 20px; font-size: 0.8rem; }
-}
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      .nav-links { display: none; }
+      section { padding: 60px 20px; }
+      #hero { padding: 90px 20px 50px; }
+      #hero .hero-title { font-size: 2.2rem; }
+      #hero .hero-desc { font-size: 1rem; }
+      .about-grid, .kontak-grid { grid-template-columns: 1fr; gap: 40px; }
+      .proyek-grid { grid-template-columns: 1fr; }
+      .about-badge { bottom: -10px; right: 10px; }
+      .about-info { grid-template-columns: 1fr; }
+      .kontak-form-wrap { padding: 24px 20px; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .proyek-card { margin: 0; }
+      .hero-btns { flex-direction: column; gap: 12px; }
+      .btn-hijau, .btn-outline { text-align: center; padding: 13px 24px; }
+      footer { padding: 20px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
 
 <!-- NAVBAR -->
 <nav>
@@ -173,7 +176,6 @@
   <div class="hero-content">
     <div class="hero-tag">👋 Halo, saya</div>
     <h1 class="hero-title">M. Ghiyats<br><span>Abdul Aziz</span></h1>
-    <!-- FIX: Tambah wrapper .hero-btns agar tombol sejajar -->
     <div class="hero-btns">
       <a href="#proyek" class="btn-hijau">Lihat Proyek</a>
       <a href="#kontak" class="btn-outline">Hubungi Saya</a>
@@ -186,7 +188,6 @@
   <div class="about-grid">
     <div class="about-img-wrap">
       <div class="about-img-box">
-        <!-- FIX: Tambah fallback emoji jika photo.jpg tidak ada -->
         <img src="photo.jpg" alt="M. Ghiyats Abdul Aziz"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="about-img-placeholder" style="display:none;">👨‍💻</div>
@@ -305,7 +306,6 @@
   <div class="section-line"></div>
   <div class="proyek-grid">
 
-    <!-- FIX: Struktur HTML proyek-img diperbaiki, tag img ditutup dengan benar -->
     <div class="proyek-card">
       <div class="proyek-img">
         <img src="image-02.jpg" alt="Aplikasi Qasir POS"
@@ -349,8 +349,8 @@
       </div>
     </div>
 
-  </div><!-- FIX: Tutup .proyek-grid yang hilang -->
-</section><!-- FIX: Tutup </section> proyek yang hilang -->
+  </div>
+</section>
 
 <!-- KONTAK -->
 <section id="kontak">
