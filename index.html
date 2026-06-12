@@ -136,18 +136,25 @@
     footer span { color: var(--hijau-terang); }
 
     /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav { padding: 16px 24px; }
-      .nav-links { display: none; }
-      section { padding: 70px 24px; }
-      #hero { padding: 100px 24px 60px; }
-      .about-grid, .kontak-grid { grid-template-columns: 1fr; gap: 40px; }
-      .proyek-grid { grid-template-columns: 1fr; }
-      .about-badge { bottom: -10px; right: 10px; }
-    }
-  </style>
-</head>
-<body>
+ /* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 16px 20px; }
+  .nav-links { display: none; }
+  section { padding: 60px 20px; }
+  #hero { padding: 90px 20px 50px; }
+  #hero .hero-title { font-size: 2.2rem; }
+  #hero .hero-desc { font-size: 1rem; }
+  .about-grid, .kontak-grid { grid-template-columns: 1fr; gap: 40px; }
+  .proyek-grid { grid-template-columns: 1fr; }
+  .about-badge { bottom: -10px; right: 10px; }
+  .about-info { grid-template-columns: 1fr; }
+  .kontak-form-wrap { padding: 24px 20px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .proyek-card { margin: 0; }
+  .hero-btns { flex-direction: column; gap: 12px; }
+  .btn-hijau, .btn-outline { text-align: center; padding: 13px 24px; }
+  footer { padding: 20px; font-size: 0.8rem; }
+}
 
 <!-- NAVBAR -->
 <nav>
